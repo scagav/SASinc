@@ -2,11 +2,11 @@ html{
   font-size: 18px;
   font-family: Helvetica;
   color: white;
+  background-color: black;
 }
 
 header{
-  background-color: black;
-
+  background-color: blue;
   display: inline-flex;
   width: 100%;
   align-items: center;
@@ -19,11 +19,13 @@ header img{
 }
 
 header span{
+  width: 960rem;
   font-size: 1rem;
   margin-top: .66rem;
   margin-bottom: .66rem;
   padding-top: 0px;
   padding-bottom: 0px;
+
 }
 
 a{
@@ -31,25 +33,137 @@ a{
 }
 
 .container{
-  width: 960px;
+   max-width: 960px;
+   margin: 0 auto;
+   display: block;
 }
 
-.container .first{
+.first{
   height: 25rem;
+  width: 100%;
   display: flex;
-  background-image: url("./resources/images/moto.jpeg");
+  background-image: url("../images/moto.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  align-items: center;
 }
+
+.first .block1{
+  width: 20rem;
+  background-color: black;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
+  font-weight: bold;
+}
+.block1 h2{
+  font-size: 2rem;
+  padding-top: .25rem;
+}
+
 .container .navbar{
   width: 100%;
-  background-color: firebrick;
+
 }
+
+.navbar{
+   background-color: firebrick;
+   width: 100%;
+ }
+
+
 ul{
   list-style: none;
   display: inline-flex;
   width: 100%;
   padding: .75rem 0;
+  justify-content: space-between ;
+}
+
+.container .items{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.spystuff{
+  border: 4px black solid;
+  width: 30%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: inline-flex;
+}
+
+.tool{
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  background-color: green;
+  align-items: flex-end;
+
+
+}
+
+.spystuff img{
+  height: 9rem;
+  width: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: inline-flex;
+  background-color: blue;
+}
+
+.tool  span{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+
+
+}
+
+.container .info{
+  display: inline-flex;
+  background-color: white;
+  align-items: center;
   justify-content: space-around ;
+  width: 100%;
+  color: black;
+}
+
+
+.square span{
+  display: flex;
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  width: auto;
+  color: white;
+
+}
+
+.square{
+  width: 35%;
+  display: inline-block;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+ footer{
+  height: 5rem;
+  display: inline-flex;
+  width:100%;
+  align-items: center;
+  background-color: purple;
+}
+
+footer span{
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+
 }
