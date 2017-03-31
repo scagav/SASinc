@@ -37,7 +37,7 @@ a{
 .container .first{
   height: 25rem;
   display: flex;
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-image: url("./resources/images/moto.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
