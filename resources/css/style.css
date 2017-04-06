@@ -6,26 +6,26 @@ html{
 }
 
 header{
-  background-color: blue;
-  display: inline-flex;
+  display: flex;
   width: 100%;
   align-items: center;
 }
 
 header img{
+  display: flex;
   height: 1.5rem;
   padding-left: .5rem;
   padding-right: 1rem;
 }
-
+.one{
+  display: inline-flex;
+  align-items: center;
+}
 header span{
-  width: 960rem;
-  font-size: 1rem;
   margin-top: .66rem;
   margin-bottom: .66rem;
   padding-top: 0px;
   padding-bottom: 0px;
-
 }
 
 a{
@@ -33,9 +33,9 @@ a{
 }
 
 .container{
-   max-width: 960px;
+   width: 960px;
    margin: 0 auto;
-   display: block;
+   display: flex;
 }
 
 .first{
@@ -49,7 +49,7 @@ a{
   align-items: center;
 }
 
-.first .block1{
+.container .block1{
   width: 20rem;
   background-color: black;
   padding: 2rem 3rem;
@@ -61,30 +61,28 @@ a{
   padding-top: .25rem;
 }
 
-.container .navbar{
-  width: 100%;
-
-}
-
 .navbar{
    background-color: firebrick;
    width: 100%;
  }
 
-
-ul{
+.container ul{
   list-style: none;
   display: inline-flex;
   width: 100%;
   padding: .75rem 0;
-  justify-content: space-between ;
+  justify-content: space-between;
 }
 
-.container .items{
-  width: 100%;
+main{
   background-color: white;
+  width: 100%;
+}
+
+.items .container{
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .spystuff{
@@ -92,48 +90,52 @@ ul{
   width: 30%;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  display: inline-flex;
-}
-
-.tool{
   overflow: hidden;
-  display: inline-block;
-  width: 100%;
-  background-color: green;
-  align-items: flex-end;
-
-
-}
-
-.spystuff img{
-  height: 9rem;
-  width: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: inline-flex;
-  background-color: blue;
-}
-
-.tool  span{
-  background-color: black;
   display: flex;
   justify-content: center;
+}
+
+.two img{
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+ align-items: center;
+  height: 9em;
+  width: auto;
+}
+
+img{
+
+}
+
+.two span{
+  background-color: black;
+  display: block;
+  justify-content: center;
+  text-align: center;
   width: 100%;
   padding-bottom: .5rem;
   padding-top: .5rem;
-
-
 }
 
-.container .info{
-  display: inline-flex;
-  background-color: white;
-  align-items: center;
-  justify-content: space-around ;
+.two{
+  display: inline-block;
   width: 100%;
-  color: black;
+  justify-content:
 }
 
+.info .container{
+  display: flex;
+  color: black;
+  justify-content: space-between;
+}
+
+.square{
+  width: 35%;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
 
 .square span{
   display: flex;
@@ -143,14 +145,6 @@ ul{
   padding-left: 2rem;
   width: auto;
   color: white;
-
-}
-
-.square{
-  width: 35%;
-  display: inline-block;
-  justify-content: center;
-  margin-bottom: 4rem;
 }
 
  footer{
@@ -158,12 +152,21 @@ ul{
   display: inline-flex;
   width:100%;
   align-items: center;
-  background-color: purple;
 }
 
 footer span{
   width: 960px;
   margin: 0 auto;
   display: flex;
+}
 
+@media only screen and (max-width: 1024px){
+  .navbar ul{
+    display: none;
+  }
+  .spystuff{
+    width: 47%;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
 }
